@@ -36,6 +36,10 @@ header {
     position: relative;
 }
 
+#hamburger-btn {
+    cursor: pointer;
+}
+
 .mobile-ul {
     position: absolute;
     top: 60px;
@@ -46,6 +50,10 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.hide {
+    display: none;
 }
 
 .mobile-ul::before {
@@ -308,10 +316,11 @@ img {
 }
 
 .projects-container {
+    width: 100%;
     margin-top: 50px;
     display: flex;
-    flex-grow: 1;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .project {
