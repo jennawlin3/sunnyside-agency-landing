@@ -470,6 +470,7 @@ footer img {
         background: url(../images/desktop/image-graphic-design.jpg);
         background-size: cover;
         background-position: center;
+        width: 101vw;
     }
     
     .pic-content:nth-child(2) {
