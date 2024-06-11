@@ -8,6 +8,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/fontawesome/css/fontawesome.css">
+<link rel="stylesheet" href="./assets/fontawesome/css/brands.css">
+<link rel="stylesheet" href="./assets/fontawesome/css/solid.css">
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -27,7 +30,7 @@
     <li><a href="#">About</a></li>
     <li><a href="#">Services</a></li>
     <li><a href="#">Projects</a></li>
-    <a href="#">Contact</a>
+    <a href="#" id="contact-btn-mob">Contact</a>
   </ul>
  </nav>
  <nav class="desktop-nav">
@@ -35,7 +38,7 @@
     <li><a href="#">About</a></li>
     <li><a href="#">Services</a></li>
     <li><a href="#">Projects</a></li>
-    <a href="#">Contact</a>
+    <a href="#" id="contact-btn">Contact</a>
   </ul>
  </nav>
 </header>
@@ -87,20 +90,26 @@
     <div class="testimonial">
       <img src="./images/image-emily.jpg" alt="User profile pic" srcset="">
       <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+      <div class="container-user-info">
       <h3>Emily R</h3>
       <h4>Marketing director</h4>
+      </div>
     </div>
     <div class="testimonial">
       <img src="./images/image-thomas.jpg" alt="User profile pic" srcset="">
       <p>Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.</p>
-      <h3>Thomas S.</h3>
-      <h4>Chief Operating Officer</h4>
+      <div class="container-user-info">
+        <h3>Thomas S.</h3>
+        <h4>Chief Operating Officer</h4>
+      </div>
     </div>
     <div class="testimonial">
       <img src="./images/image-jennie.jpg" alt="User profile pic" srcset="">
       <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
-      <h3>Jennie F.</h3>
-      <h4>Business Owner</h4>
+      <div class="container-user-info">
+        <h3>Jennie F.</h3>
+        <h4>Business Owner</h4>
+      </div>
     </div>
     </div>
   </section>
@@ -139,10 +148,10 @@
     <a href="#">Projects</a>
   </nav>
   <div class="social-icons">
-    <a href="#"><i></i></a>
-    <a href="#"><i></i></a>
-    <a href="#"><i></i></a>
-    <a href="#"><i></i></a>
+    <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+    <a href="#" class="fa-brands fa-instagram"><i></i></a>
+    <a href="#" class="fa-brands fa-x-twitter"><i></i></a>
+    <a href="#" class="fa-brands fa-pinterest"><i></i></a>
   </div>
  </footer>
   <div class="attribution">
