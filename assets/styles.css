@@ -386,6 +386,7 @@ footer img {
 
     .hero h1 {
         margin-top: 40px;
+        font-size: 3.5em;
     }
     
     .mobile-nav {
@@ -455,6 +456,24 @@ footer img {
     .second-container img, .first-container img {
         width: 50vw;
         height: 80vh;
+    }
+
+    .content {
+        padding: 50px 80px;
+    }
+
+    .content h2 {
+        font-size: 2.1em;
+        text-align: left;
+    }
+
+    .content a {
+        margin: 20px 0;
+        width: 120px;
+    }
+
+    .content p { 
+        text-align: left;
     }
 
     .third-content {
