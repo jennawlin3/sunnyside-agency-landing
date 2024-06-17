@@ -373,7 +373,7 @@ footer img {
     color: var(--dark-desaturated-cyan);
 }
 
-.social-icons a:hover {
+.social-icons a i:hover {
     color: var(--white);
 }
 
