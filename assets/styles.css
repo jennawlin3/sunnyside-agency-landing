@@ -19,6 +19,7 @@
 body {
     display: flex;
     flex-direction: column;
+    align-items: center;
     min-height: 100vh;
     font-family: "Barlow", sans-serif;
 }
@@ -30,6 +31,7 @@ header {
     justify-content: space-between;
     padding: 0 30px;
     align-items: center;
+    width: 100%;
 }
 
 .mobile-nav {
@@ -335,6 +337,7 @@ footer {
     align-items: center;
     background-color: #63bdab;
     height: 50vh;
+    width: 100%;
 }
 
 footer img {
@@ -378,10 +381,21 @@ footer img {
 }
 
 @media screen and (min-width: 768px) {
+    header {
+        max-width: 1800px;
+        width: 100%;
+    }
+
     .hero {
         background: url(../images/desktop/image-header.jpg);    background-position: 50% 60%;
         background-size: cover;
         justify-content: flex-start;
+        max-height: 700px;
+        max-width: 1800px;
+    }
+
+    .container {
+        max-width: 1800px;
     }
 
     .hero h1 {
@@ -434,28 +448,37 @@ footer img {
 
     .first-container {
         flex-direction: row;
+        max-height: 700px;
+        margin-left: 5px;
+    }
+
+    .first-container, .second-container {
+        width: 100vw;
+        max-width: 1800px;
     }
 
     .first-container .content, .second-container .content {
-        width: 50%;
-        height: 80vh;
+        width: 50vw;
+        max-width: 900px;
         justify-content: center;
     }
 
     .container-image {
-        width: 48%;
+        width: 50vw;
     }
 
     .second-container {
         flex-direction: row-reverse;
-        height: 80vh;
+        max-height: 700px;
         padding: 0;
-        margin-top: -2px;
+        margin-top: -5px;
     }
 
     .second-container img, .first-container img {
         width: 50vw;
-        height: 80vh;
+        max-width: 905px;
+        margin-left: -10px;
+        max-height: 690px;
     }
 
     .content {
@@ -478,24 +501,26 @@ footer img {
 
     .third-content {
         display: flex;
-        margin-top: -2px;
+        margin-top: -3px;
+        margin-left: -15px;
     }
 
     .pic-content {
-        min-height: 90vh;
+        max-height: 700px;
     }
 
     .pic-content:nth-child(1) {
         background: url(../images/desktop/image-graphic-design.jpg);
         background-size: cover;
         background-position: center;
-        width: 101vw;
+        width: 100%;
     }
     
     .pic-content:nth-child(2) {
         background: url(../images/desktop/image-photography.jpg);
         background-size: cover;
         background-position: center;
+        width: 100%;
     }
 
     .testimonial-container {
@@ -527,7 +552,9 @@ footer img {
 
     footer {
         justify-content: center;
-        min-height: 50vh;
+        max-height: 700px;
+        max-width: 1800px;
+        width: 100%;
     }
 
     footer img {
@@ -537,11 +564,6 @@ footer img {
 
 @media screen and (min-width: 868px) {
 
-    .first-container .content, .second-container .content {
-        width: 50%;
-        height: 80vh;
-    }
-
     .testimonial:first-of-type h3 {
         margin-top: 30px;
     }
@@ -549,12 +571,16 @@ footer img {
     .testimonial:first-of-type p {
         line-height: 1.8;
     }
-
-    .container-image {
-        width: 48.9%;
-    }
 }
 
+@media screen and (min-width: 1518px) {
+    .first-container {
+        margin-left: 5px;
+    }
 
+    .second-container img {
+        margin-left: -10px;
+    }
+}
 
 
